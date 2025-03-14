@@ -6,14 +6,14 @@ This is the Parres website. It's simple. On purpose.
 
 We use tailwindcss for styles, and the tailwindcss CLI to build our styles.
 
-To dynamically update the styles as you develop you can run:
+To dynamically update the styles as you develop you can run: (this doesn't hot reload the page)
 
 ```sh
-bunx @tailwindcss/cli -i ./input.css -o ./output.css --watch
+bun run dev
 ```
 
 Before pushing minifiy and optimize the output with:
 
 ```sh
-bunx @tailwindcss/cli -i ./input.css -o ./output.css --minify
+bun run build
 ```
