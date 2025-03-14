@@ -1,6 +1,10 @@
 {
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.14",
-    "tailwindcss": "^4.0.14"
-  }
+	"scripts": {
+		"build": "bunx @tailwindcss/cli -i ./input.css -o ./output.css --minify",
+		"dev": "bunx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+	},
+	"dependencies": {
+		"@tailwindcss/cli": "^4.0.14",
+		"tailwindcss": "^4.0.14"
+	}
 }
